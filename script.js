@@ -158,9 +158,10 @@ const updatedBook = { ...book, movieReleaseDate: "2001" }; // adding new propert
 console.log(updatedBook);
 
 // Template literals
-const summary = `${title} is a book by ${author} published in ${
-  publicationDate.split("-")[0]
-}.`;
+const getYear = (str) => str.split("-")[0];
+const summary = `${title} is a book by ${author} published in ${getYear(
+  publicationDate
+)}.`;
 summary;
 
 // Ternaries
@@ -171,5 +172,5 @@ pagesRange;
 // function getYear(str) {
 //   return str.split("-")[0];
 // }
-const getYear = (str) => str.split("-")[0];
-console.log(getYear(publicationDate));
+// const getYear = (str) => str.split("-")[0];
+// console.log(getYear(publicationDate));
