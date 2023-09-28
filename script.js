@@ -174,3 +174,13 @@ pagesRange;
 // }
 // const getYear = (str) => str.split("-")[0];
 // console.log(getYear(publicationDate));
+
+// Short-circuiting
+console.log(false && "Some string");
+console.log(true && "Some string");
+
+console.log(false || "Some string");
+console.log(true || "Some string");
+
+const spanishTranslation = book.translations.spanish || "NONE";
+spanishTranslation;
