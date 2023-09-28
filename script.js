@@ -211,3 +211,15 @@ const essentialData = books.map((book) => ({
   author: book.author,
 }));
 essentialData;
+
+// Array filter
+const longBooks = books
+  .filter((book) => book.pages > 500)
+  .filter((book) => book.hasMovieAdaptation)
+  .map((book) => book.title);
+longBooks;
+
+const adventureBooks = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+adventureBooks;
