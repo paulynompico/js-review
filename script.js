@@ -145,10 +145,14 @@ function getBook(id) {
 
 // Destructuring
 
-const book = getBook(5);
+const book = getBook(4);
 const { title, author, genres } = book;
 console.log(title, author, genres);
 
 // Rest/Spread
 const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 console.log(otherGenres);
+const newGenres = [...genres, "epic"];
+console.log(newGenres);
+const updatedBook = { ...book, movieReleaseDate: "2001" }; // adding new property using spread
+console.log(updatedBook);
