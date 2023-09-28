@@ -156,3 +156,7 @@ const newGenres = [...genres, "epic"];
 console.log(newGenres);
 const updatedBook = { ...book, movieReleaseDate: "2001" }; // adding new property using spread
 console.log(updatedBook);
+
+// Template literals
+const summary = `${title} is a book`;
+summary;
