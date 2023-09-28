@@ -225,5 +225,5 @@ const adventureBooks = books
 adventureBooks;
 
 // Reduce
-const allPages = books.reduce((acc, book) => acc + book.pages, 0);
+const allPages = books.reduce((sum, book) => sum + book.pages, 0);
 allPages;
