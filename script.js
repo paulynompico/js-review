@@ -227,3 +227,21 @@ adventureBooks;
 // Reduce
 const allPages = books.reduce((sum, book) => sum + book.pages, 0);
 allPages;
+
+// Sort
+const y = [3, 6, 2, 7, 1];
+const sorted = y.sort((a, b) => a - b);
+y;
+// use slice() to not mutate original data
+const sortedYear = books
+  .slice()
+  .sort(
+    (a, b) =>
+      parseInt(a.publicationDate.split("-")[0]) -
+      parseInt(b.publicationDate.split("-")[0])
+  );
+const d = sortedYear.map((book) => ({
+  title: book.title,
+  publicationDate: book.publicationDate.split("-")[0],
+}));
+d;
