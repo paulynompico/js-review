@@ -245,3 +245,15 @@ const d = sortedYear.map((book) => ({
   publicationDate: book.publicationDate.split("-")[0],
 }));
 d;
+
+// Immutatable array
+const newBook = {
+  id: 6,
+  title: "Harry Potter and the Chamber of Secrets",
+  author: "J.K. Rowling",
+};
+const booksAfterAdd = [...books, newBook];
+booksAfterAdd;
+
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+booksAfterDelete;
