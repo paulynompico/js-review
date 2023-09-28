@@ -166,3 +166,10 @@ summary;
 // Ternaries
 const pagesRange = pages > 1000 ? "over a thousand" : "less than a thousand";
 pagesRange;
+
+// Arrow functions
+// function getYear(str) {
+//   return str.split("-")[0];
+// }
+const getYear = (str) => str.split("-")[0];
+console.log(getYear(publicationDate));
