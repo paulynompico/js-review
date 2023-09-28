@@ -146,7 +146,7 @@ function getBook(id) {
 // Destructuring
 
 const book = getBook(5);
-const { title, author, genres, publicationDate } = book;
+const { title, author, genres, publicationDate, pages } = book;
 console.log(title, author, genres);
 
 // Rest/Spread
@@ -162,3 +162,7 @@ const summary = `${title} is a book by ${author} published in ${
   publicationDate.split("-")[0]
 }.`;
 summary;
+
+// Ternaries
+const pagesRange = pages > 1000 ? "over a thousand" : "less than a thousand";
+pagesRange;
