@@ -145,7 +145,7 @@ function getBook(id) {
 
 // Destructuring
 
-const book = getBook(5);
+const book = getBook(2);
 const { title, author, genres, publicationDate, pages } = book;
 console.log(title, author, genres);
 
@@ -184,3 +184,6 @@ console.log(true || "Some string");
 
 const spanishTranslation = book.translations.spanish || "NONE";
 spanishTranslation;
+// Null coalescing
+const count = book.reviews.librarything.reviewsCount ?? "no data";
+count;
