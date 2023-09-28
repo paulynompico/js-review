@@ -197,6 +197,8 @@ function getTotalReviewCount(book) {
 }
 console.log(getTotalReviewCount(book));
 */
+
+/*
 const books = getBooks();
 
 // Map
@@ -257,3 +259,6 @@ booksAfterAdd;
 
 const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
 booksAfterDelete;
+*/
+
+fetch("https://jsonplaceholder.typicode.com/todos");
